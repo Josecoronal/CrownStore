@@ -7,7 +7,7 @@ body{
 }
 .wrapper{
 	width: 900px;
-	height: 100vw;
+	height: 100%;
 	margin: auto;
 }
 
@@ -265,6 +265,119 @@ body{
 	color: white;
 }
 
-.form{
-	height: 100px;
+.footer{
+	width: 100%;
+	height: 150px;
+	border-top: 2.5px solid gray;
+	/*FLEX*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__left{
+	width: 60%;
+	height: 100%;
+}
+
+.footer__left-box{
+	width: 100%;
+	height: inherit;
+	/*FLEX*/
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.footer__left-box dt {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+dl {
+	font-size: 12px;
+
+}
+
+dl a{
+	text-decoration: none;
+	color: black;
+}
+.footer__left-box dl a:hover{
+	color: rgba(0,0,0, 0.5);
+}
+
+.footer__right{
+	width: 38%;
+	display: flex;
+	flex-direction: column;
+}
+
+.dl__container{
+	width: 100%;
+	height: 40%;
+	margin-bottom: 30px;
+}
+
+.footer__right dt{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.dd__form{
+	height: 10px;
+}
+
+.footer__right input{
+	width: 60%;
+	height: inherit;
+}
+.footer__right button{
+	width: 30%;
+	height: 44px;
+	background-color: black;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.footer__right-redes {
+	width: 40%;
+	height: 30%;
+	/*DISPLAY*/
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.redes{
+	width: 50px;
+	height: 50px;
+}
+
+
+.facebook{
+	background-image: url(../ejercicio1/img/facebook.png);
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+}
+
+.twitter{
+	background-image: url(../ejercicio1/img/twitter.png);
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+}
+
+.instagram{
+	background-image: url(../ejercicio1/img/instagram.png);
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+}
+
+footer{
+	width: 100%;
+	padding: 10px;
+	border-top: 2.5px solid gray;
+	/*FLEX*/
+	display: flex;
+	justify-content: space-between;
 }
