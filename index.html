@@ -13,12 +13,17 @@
 <body>
 	<div class="wrapper">
 		<header class="header" id="header">
-			<ul class="header__ul">
-				<li class="header__ul-li"><a href="#">Home</a></li>
-				<li class="header__ul-li"><a href="#"> About</a></li>
-				<li class="header__ul-li"><a href="#"> Blog </a></li>
-				<li class="header__ul-li"><a href="#">Contact</a></li>
-			</ul>
+			<figure class="menu">
+				<img class="burgermenu" src="img/burgermenu.png">
+			</figure>
+			<nav class="header__nav">
+				<ul class="header__ul">
+					<li class="header__ul-li"><a href="#">Home</a></li>
+					<li class="header__ul-li"><a href="#"> About</a></li>
+					<li class="header__ul-li"><a href="#"> Blog </a></li>
+					<li class="header__ul-li"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
 		</header>
 		<section class="main">
 			<div class="main__content">
@@ -198,7 +203,25 @@
 			<h3> Página Diseñada por: José Corona</h3>
 		</footer>
 	</div>
-
 	</footer>
+<script type="text/javascript">
+
+	const burgerMenu = document.querySelector(".burgermenu");
+
+	console.log(burgerMenu);
+		
+	const nav = document.querySelector(".header__nav");
+
+	burgerMenu.addEventListener("click",showHiden);
+
+	function showHiden(){
+		if(nav.classList.contains("nav__showHiden")){
+			nav.classList.remove("nav__showHiden")
+			}
+		else{
+			nav.classList.add("nav__showHiden");
+		}
+	}
+</script>
 </body>
 </html>
